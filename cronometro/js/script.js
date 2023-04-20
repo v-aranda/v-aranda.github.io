@@ -63,6 +63,7 @@ function Onload(){
     };
     function zera(){
         relogioPara()
+        marcaDecorrido = []
         setRelogioZerado()
         relogioPisca()
     };
@@ -78,7 +79,7 @@ function Onload(){
     const botoes = document.querySelector('.botoes')
     document.addEventListener('submit',previneReload)
     
-    const marcaDecorrido = []
+    let marcaDecorrido = []
     let cor,marcaInicio,update,piscar = 0
     zera()
     
