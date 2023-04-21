@@ -1,4 +1,4 @@
-function Onload(evento){
+function Onload(){
     function setListadetarefas(){
         // console.log(listaTarefas)
         tarefas.innerHTML = ''
@@ -7,8 +7,7 @@ function Onload(evento){
         }
     };
 
-    function recebeTarefa(evento){
-        evento.preventDefault()
+    function recebeTarefa(){
         listaTarefas.push(criaTarefa.value)
         // console.log(listaTarefas)
         update()
@@ -33,7 +32,7 @@ function Onload(evento){
     const entrada = document.querySelector('.entrada')
     const criaTarefa = document.querySelector('.criaTarefa')
     apaga = apagaTarefa
-    let listaTarefas = JSON.parse(localStorage.getItem('tarefas')) 
+        
     update()
     
     entrada.addEventListener('submit',recebeTarefa)
