@@ -119,8 +119,8 @@ function Onload(){
     };
 
     function salvaLista(){  
-        let marcadoresJason = JSON.stringify(listaMarcadoresSalvos)
-        localStorage.setItem('marcadores',marcadoresJason)
+        // let marcadoresJason = JSON.stringify(listaMarcadoresSalvos)
+        // localStorage.setItem('marcadores',marcadoresJason)
     }
 
     function updatelista(){
@@ -133,20 +133,13 @@ function Onload(){
     const milsegundos =  document.querySelector('.out-milesimos')
     const botoes = document.querySelector('.botoes')
     const listaMarcadores = document.querySelector('.marcas')
-    
+    apaga = apagaMarcador
     let marcadecorrido = [] 
-    let listaMarcadoresSalvos= JSON.parse(localStorage.getItem('marcadores')) 
-    
-    
-    
-    
+    let listaMarcadoresSalvos= []
     let rodando = true
     let cor,botaoControle,marcaInicio,update,piscar = 0
-    zera()
-    
-    apaga = apagaMarcador
-    
-    updatelista()
 
+    zera()
+    updatelista()
 }
 Onload()
