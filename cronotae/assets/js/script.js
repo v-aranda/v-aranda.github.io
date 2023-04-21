@@ -105,7 +105,7 @@ function Onload(){
     // marcador
     function setListamarcadores(){
         listaMarcadores.innerHTML = ''
-        listaMarcadoresSalvos.sort()
+        
         for (let i in listaMarcadoresSalvos){
             let second = new Date(listaMarcadoresSalvos[i])
             let milisegundos = second.getMilliseconds()
