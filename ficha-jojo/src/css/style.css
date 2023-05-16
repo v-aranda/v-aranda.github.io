@@ -1,0 +1,11 @@
+input{
+    border: none;
+    outline: none;
+}
+.status, .atributos{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+ 

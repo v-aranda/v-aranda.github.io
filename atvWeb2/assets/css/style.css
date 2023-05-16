@@ -1,0 +1,95 @@
+:root{
+    --shadow: rgba(0,0,0,0.75)
+}
+nav{
+    background-color: #181818;
+    padding-inline: 20px;
+    padding-block: 10px;
+    position: sticky;
+    align-items: center;
+    top: 0;
+    display: flex;
+    justify-content: space-between
+    ;
+}
+nav img{
+    width: 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+body{
+    margin: 0PX;
+}
+h1{
+    margin: 0px;
+}
+.hero{
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+    overflow: hidden;
+}
+.hero-container{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    width: 15%;
+    background-color: var(--shadow);
+    box-shadow: 30px 20px 30px 30px var(--shadow);
+    height: 100%;
+}
+.home-content p{
+    width: 50%;
+}
+.home-content ul{
+    width: 100%;
+    padding-inline: 200px;
+}
+.home-content ul li{
+    display: flex;
+    justify-content: center;
+}
+.home-content ul p{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+.home-content ul img{
+    width: 100px;
+    height: 100px;
+    margin-block: auto;
+    margin-right: 20px;
+}
+
+.noticias{
+    display: flex;
+    justify-content: space-around;
+    background-color: #2a2d2e;
+    padding: 80px;
+    border-radius: 0px 0px 100%;
+}
+.noticia{
+    background-color: rgb(246, 250, 249);
+    width: 15vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 15px;
+    border-radius: 20px;
+    min-height: 250px;
+}
+.noticia img{
+    width: 95%;
+}
+.noticia h4{
+    flex-wrap: wrap;
+    text-align: justify;
+}
