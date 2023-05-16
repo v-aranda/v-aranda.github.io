@@ -1,6 +1,22 @@
 :root{
-    --shadow: rgba(0,0,0,0.75)
+    --shadow: rgba(0,0,0,0.75);
+    --dark: #040102
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+.a-center{
+    display: flex;
+    justify-content: center;
+}
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hero, h1, h2, h3,th{
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
 nav{
     background-color: #181818;
     padding-inline: 20px;
@@ -14,6 +30,16 @@ nav{
 }
 nav img{
     width: 50px;
+}
+.block{
+    height: 240px;
+    background-color: var(--dark);
+    border-radius: 0px 0px 100%;
+}
+.invert-block{
+    height: 240px;
+    background-color: var(--dark);
+    border-radius: 100% 0px 0px;
 }
 a{
     text-decoration: none;
@@ -38,43 +64,91 @@ h1{
     background-size: cover;
     color: aliceblue;
     overflow: hidden;
+    
+}
+.red{
+    background-color: red;
+    transition: all 1000ms;
+}
+.blue{
+    background-color: #218eba;
+    transition: all 1000ms;
+}
+.problemas-hero{
+    background-blend-mode: darken;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+    overflow: hidden;
+}
+.home-hero{
+    height: 60vh;
+    background-position: center;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: var(--dark);
+    color: aliceblue;
+    overflow: hidden;
 }
 .hero-container{
     display: flex;
     align-items: center;
     padding-left: 20px;
-    width: 15%;
+    width: 35%;
     background-color: var(--shadow);
     box-shadow: 30px 20px 30px 30px var(--shadow);
     height: 100%;
 }
-.home-content p{
-    width: 50%;
+.home-text-1{
+    justify-content: center;
+    display: flex;
+    padding: 100px;  
 }
+.home-text-1 img{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    width: 30%;
+}
+.home-text-1 div{
+    margin: 20px;
+    width: 40% !important;
+}
+
 .home-content ul{
+    background-image: url(../img/bg-home.jpg);
+    background-size: 100% 100%;
+    background-color: rgb(216, 216, 216);
+    background-blend-mode: overlay;
+    margin: 0px;
     width: 100%;
     padding-inline: 200px;
+    padding-bottom: 200px;
+    height: 700px;
+    border-radius: 0 0 100%;
 }
 .home-content ul li{
-    display: flex;
-    justify-content: center;
+    display: flex; 
+}
+.r{
+    justify-content: end;
 }
 .home-content ul p{
-    display: flex;
-    align-items: center;
+    width: 50%;
+    
     text-align: justify;
 }
 .home-content ul img{
     width: 100px;
     height: 100px;
     margin-block: auto;
-    margin-right: 20px;
+    margin-inline: 20px;
 }
 
 .noticias{
     display: flex;
     justify-content: space-around;
-    background-color: #2a2d2e;
+    background-color: var(--dark);
     padding: 80px;
     border-radius: 0px 0px 100%;
 }
@@ -92,4 +166,71 @@ h1{
 .noticia h4{
     flex-wrap: wrap;
     text-align: justify;
+}
+
+.noticias-form-div{
+    width: 45vw;
+    height: 45vw;
+    background-color: var(--dark);
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.noticias-form-div form{
+   width: 60%;
+   
+}   
+.noticias-form-div h1{
+    color: aliceblue;
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.noticias-form-div input{
+    width: 100%;
+    padding-block: 15px;
+    padding-inline-start: 10px;
+    border: none;
+    outline: transparent;
+    border-radius: 40px;
+ }  
+ .noticias-form-div a{
+    background-color: #218eba;
+    color: aliceblue;
+    outline: none;
+    border: none;
+    padding: 20px;
+    border-radius: 40px;
+ }
+.section-form{
+    background-image: url(../img/bg-news.jpg);
+    background-size: 100% 100%;
+    background-color: rgb(169, 166, 163);
+    background-blend-mode: overlay;
+}
+.problemas-container div{
+    padding: 50px;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+}
+table{
+    width: 80%;
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+
+td,th{
+    color: aliceblue;
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    padding: 10px;
+}
+.problem-line{
+    background-image: url(../img/bg-problems.jpg);
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }

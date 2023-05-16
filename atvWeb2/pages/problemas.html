@@ -1,29 +1,66 @@
-<section style="background-image: url(../assets/img/hero-problema.png)" class="hero">
+<div  id="hero"></div>
+<section style="background-image: url(../assets/img/hero-problema.png);" class="problemas-hero blue">
     <div class="hero-container">
-        <h1 style="text-align: center;" >Vantagens <br>X<br> Problemas</h1>
+        <div>
+            <h1>Vantagens e Ameaças</h1>
+        <p>
+            A inteligência artificial (IA) é uma tecnologia poderosa que pode trazer muitos benefícios para a sociedade, mas também pode apresentar vários problemas e perigos.
+        </p>
+        </div>
     </div>
     
 </section>
-<section class="container">
+<section class="container, problemas-container">
     <div>
-        <p>
-            A inteligência artificial (IA) é uma tecnologia poderosa que pode trazer muitos benefícios para a sociedade, mas também pode apresentar vários problemas e perigos
-        </p>
-        <ul>
-            <li>
-                Um dos problemas da IA é o desemprego causado pela automação de tarefas que antes eram feitas por humanos. Isso pode afetar vários setores e profissões, e exigir novas formas de educação e capacitação para os trabalhadores1.
-            </li>
-            <li>
-                Outro problema da IA é a manipulação social através de algoritmos que podem influenciar o comportamento, as opiniões e as emoções das pessoas. Por exemplo, as redes sociais podem usar a IA para mostrar conteúdo personalizado que reforce as crenças existentes ou incentive o consumo2.
-            </li>
-            <li>
-                Um perigo relacionado à IA é a vigilância social com tecnologias que podem monitorar e rastrear as atividades, os movimentos e as comunicações das pessoas. Isso pode violar a privacidade, a liberdade e os direitos humanos dos indivíduos e dos grupos2.
-            </li>
-            <li>
-                Outro perigo da IA é o viés devido à inteligência artificial que pode refletir ou amplificar as discriminações e as injustiças existentes na sociedade. Por exemplo, sistemas de reconhecimento facial, de recomendação ou de tomada de decisão podem ser tendenciosos contra certas características, como gênero, raça ou classe23.
-            </li>
-            <li>Um perigo mais extremo da IA é o uso de armas autônomas movidas por inteligência artificial que podem matar ou ferir pessoas sem supervisão ou controle humano. Isso pode aumentar o risco de conflitos, de erros e de violações do direito internacional humanitário</li>
-            <li>Um perigo potencial da IA é a perda de controle sobre sistemas de inteligência artificial que se tornem mais capazes e independentes do que os humanos. Isso pode levar a cenários catastróficos, como a rebelião das máquinas ou a singularidade tecnológica4.</li>
-        </ul>
+        <table border="1">
+            <thead>
+              <tr>
+                <th>Ameaças</th>
+                <th>Vantagens</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Um dos problemas da IA é o desemprego causado pela automação de tarefas que antes eram feitas por humanos. Isso pode afetar vários setores e profissões, e exigir novas formas de educação e capacitação para os trabalhadores.</td>
+                    <td>Redução de custos operacionais: As aplicações que utilizam a inteligência artificial são capazes de reduzir erros e aumentar a produtividade</td>
+                </tr>
+                <tr>
+                    <td>Um perigo relacionado à IA é a vigilância social com tecnologias que podem monitorar e rastrear as atividades, os movimentos e as comunicações das pessoas. Isso pode violar a privacidade, a liberdade e os direitos humanos dos indivíduos e dos grupos.</td>
+                    <td>Inovação: A transformação digital tem tudo a ver com a inovação proporcionada pelas novas tecnologias</td>
+                </tr>
+                 <tr>
+                    <td>Outro perigo da IA é o viés devido à inteligência artificial que pode refletir ou amplificar as discriminações e as injustiças existentes na sociedade. Por exemplo, sistemas de reconhecimento facial, de recomendação ou de tomada de decisão podem ser tendenciosos contra certas características, como gênero, raça ou classe.</td>
+                    <td>Eficiência: A inteligência artificial pode facilitar a busca por artigos de ajuda para os clientes e garantir que eles recebam as informações certas no momento certo</td>
+                </tr>
+                <tr>
+                    <td>Um perigo mais extremo da IA é o uso de armas autônomas movidas por inteligência artificial que podem matar ou ferir pessoas sem supervisão ou controle humano. Isso pode aumentar o risco de conflitos, de erros e de violações do direito internacional humanitário.</td>
+                    <td>Aumento da automação: A inteligência artificial diminui o risco de fadiga operacional e evita problemas de manutenção</td>
+                </tr>
+                <tr>
+                    <td>Um perigo potencial da IA é a perda de controle sobre sistemas de inteligência artificial que se tornem mais capazes e independentes do que os humanos. Isso pode levar a cenários catastróficos, como a rebelião das máquinas ou a singularidade tecnológica.</td>
+                    <td>Melhoria na tomada de decisões: A inteligência artificial contribui para melhorar o processo de tomada de decisões nas empresas, devido à facilidade dos sistemas em organizar e analisar grande volume de dados complexos e oferecer respostas diretas</td>
+                </tr>
+              
+            </tbody>
+          </table>
+          
     </div>
+    <div class="problem-line"></div>
 </section>
+<script>
+    const bgProblems = document.querySelector('.problemas-hero')
+    let a = 0
+    function mudaCor(){
+        console.log('ping')
+        if (a === 0){
+            bgProblems.classList.replace("blue","red")
+            a = 1
+        }
+        else{
+            bgProblems.classList.replace("red","blue")
+            a = 0
+        }
+        
+    }
+    updateColor = setInterval(mudaCor,5000)
+</script>
